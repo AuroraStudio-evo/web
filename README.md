@@ -1,4 +1,3 @@
-# web
 # aurorastudio
 Nuestros Fundadores
 David Martinez • Alexander Blanco • Angel Padilla
