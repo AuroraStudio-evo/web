@@ -1,0 +1,81 @@
+/* --- Hero Section for Services Page --- */
+.hero-servicios {
+    height: 50vh;
+    background-image: linear-gradient(rgba(13, 13, 13, 0.7), var(--primary-color)), url('Image/Visual 5.jpg'); /* Using a different image for variety */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-servicios h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: white;
+}
+
+.hero-servicios p {
+    font-size: 1.2rem;
+    color: var(--text-color-darker);
+    margin-top: 10px;
+}
+
+/* --- Services Detail Section --- */
+.services-detail-section {
+    padding: 80px 0;
+}
+
+.service-detail-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+}
+
+.service-detail-card {
+    background-color: var(--secondary-color);
+    padding: 30px;
+    border-radius: 8px;
+    border: 1px solid transparent;
+    transition: transform 0.4s ease, border-color 0.4s ease;
+    transform-style: preserve-3d;
+}
+
+.service-detail-card:hover {
+    transform: perspective(1000px) rotateY(5deg) rotateX(5deg) scale(1.05);
+    border-color: var(--accent-color);
+}
+
+.service-detail-card h3 {
+    font-size: 1.8rem;
+    color: white;
+    margin-bottom: 15px;
+}
+
+.service-detail-card p {
+    font-size: 1rem;
+    color: var(--text-color-darker);
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.service-detail-card ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.service-detail-card ul li {
+    font-size: 0.95rem;
+    color: var(--text-color);
+    margin-bottom: 8px;
+    position: relative;
+    padding-left: 20px;
+}
+
+.service-detail-card ul li::before {
+    content: '✓'; /* Checkmark icon */
+    color: var(--accent-color);
+    position: absolute;
+    left: 0;
+    top: 0;
+}

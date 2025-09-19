@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AuroraStudio - Desarrollo de software</title>
+    <link rel="icon" href="Image/logo.webp" type="image/webp">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="header">
+        <nav class="navbar">
+            <div class="container">
+                <a href="#home" class="logo">
+                    <img src="Image/logo.webp" alt="AuroraStudio Logo">
+                    <span class="logo-text">AuroraStudio</span>
+                </a>
+                <input type="checkbox" id="menu-toggle" />
+                <label for="menu-toggle" class="menu-icon">&#9776;</label>
+                <ul class="nav-links">
+                    <li><a href="#home">Inicio</a></li>
+                    <li><a href="servicios.html">Servicios</a></li>
+                    <li><a href="equipo.html">Portafolio</a></li>
+                    <li><a href="#contact">Contacto</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="hero" id="home">
+            <div class="container">
+                <div class="hero-text">
+                    <h1>En AuroraStudio Transformamos Tus Ideas En Diseños Impactantes</h1>
+                    <p class="reveal fade-in-up" style="transition-delay: 0.5s;">Creatividad, innovación y estrategia para llevar tu marca al siguiente nivel.</p>
+                    <a href="#portfolio" class="btn reveal fade-in-up" style="transition-delay: 0.7s;">Ver Nuestro Trabajo</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="services" class="services-section">
+            <div class="container">
+                <h2 class="reveal fade-in-left">Algunos De Nuestros Servicios</h2>
+                <div class="services-grid">
+                    <div class="service-card reveal fade-in-up">
+                        <h3>Branding y Logotipos</h3>
+                        <p>Creamos identidades de marca memorables que conectan con tu audiencia.</p>
+                    </div>
+                    <div class="service-card reveal fade-in-up" style="transition-delay: 0.2s;">
+                        <h3>Diseño Web y UI/UX</h3>
+                        <p>Diseñamos interfaces intuitivas y atractivas para experiencias de usuario excepcionales.</p>
+                    </div>
+                    <div class="service-card reveal fade-in-up" style="transition-delay: 0.4s;">
+                        <h3>Marketing Digital</h3>
+                        <p>Material gráfico para redes sociales, campañas y más, optimizado para la conversión.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="portfolio" class="portfolio-section">
+            <div class="container">
+                <h2 class="reveal fade-in-left">Vitrina</h2>
+                <div class="portfolio-grid">
+                    <div class="portfolio-item reveal zoom-in" data-title="Branding para Marca de Café" data-description="Desarrollo de identidad visual completa, incluyendo logotipo, paleta de colores y packaging, para una nueva marca de café artesanal.">
+                        <img src="Image/portafolio-1.jpg" alt="Proyecto de diseño 1">
+                        <div class="portfolio-overlay">
+                            <h3>Branding para Marca de Café</h3>
+                        </div>
+                    </div>
+                    <div class="portfolio-item reveal zoom-in" style="transition-delay: 0.2s;" data-title="Diseño de App Móvil" data-description="Diseño de interfaz (UI) y experiencia de usuario (UX) para una aplicación de fitness, enfocada en la simplicidad y la motivación.">
+                        <img src="Image/portafolio-2.jpg" alt="Proyecto de diseño 2">
+                        <div class="portfolio-overlay">
+                            <h3>Diseño de App Móvil</h3>
+                        </div>
+                    </div>
+                    <div class="portfolio-item reveal zoom-in" style="transition-delay: 0.4s;" data-title="Campaña en Redes Sociales" data-description="Creación de contenido visual y estrategia para una campaña de lanzamiento de producto en Instagram y Facebook.">
+                        <img src="Image/portafolio-6.jpg" alt="Proyecto de diseño 3">
+                        <div class="portfolio-overlay">
+                            <h3>Campaña en Redes Sociales</h3>
+                        </div>
+                    </div>
+                    <div class="portfolio-item reveal zoom-in" style="transition-delay: 0.6s;" data-title="Ilustración Editorial" data-description="Serie de ilustraciones personalizadas para un artículo de revista digital sobre tecnología y futuro.">
+                        <img src="Image/Nova.jpg" alt="Proyecto de diseño 4">
+                        <div class="portfolio-overlay">
+                            <h3>Ilustración Editorial</h3>
+                        </div>
+                    </div>
+                </div>
+                <p class="portfolio-note reveal fade-in-up">Algunos De Los Proyectos Realizados Y Proyectos En Producción.</p>
+            </div>
+        </section>
+
+        <section id="about" class="about-section">
+            <div class="container">
+                <h2 class="reveal fade-in-left">Sobre AuroraStudio</h2>
+                <p class="reveal fade-in-up">Somos un equipo de diseñadores apasionados por la creatividad y la comunicación visual. En AuroraStudio, no solo creamos diseños bonitos, sino que construimos puentes entre las marcas y sus clientes. Nuestra misión es dar vida a tu visión con estrategia y arte.</p>
+                <div class="founders reveal fade-in-up">
+                    <h4>Nuestros Fundadores</h4>
+                    <p>David Martinez &bull; Alexander Blanco &bull; Angel Padilla</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <h2 class="reveal fade-in-left">Hablemos de tu Proyecto</h2>
+                <p class="contact-subtitle reveal fade-in-up">¿Listo para empezar? Envíanos un mensaje.</p>
+                <form action="https://getform.io/f/ayvewpjb" method="POST" enctype="multipart/form-data" class="contact-form reveal fade-in-up">
+                    <input type="text" name="name" placeholder="Tu Nombre" required>
+                    <input type="email" name="email" placeholder="Tu Correo Electrónico" required>
+                    <textarea name="message" placeholder="Cuéntanos sobre tu idea..." required></textarea>
+                    <input type="hidden" name="_next" value="https://YOUR-DOMAIN.co/thanks.html"> 
+                    <input type="hidden" name="_subject" value="Nuevo Mensaje desde tu Portafolio!">
+                    <button type="submit" class="btn">Enviar Mensaje</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-left">
+                <p>&copy; 2025 AuroraStudio. Todos los derechos reservados.</p>
+                <div class="footer-contact">
+                    <span>Atención al Cliente: </span>
+                    <a href="https://wa.me/573046335787" target="_blank">+57 3046335787</a>
+                    <span> / </span>
+                    <a href="https://wa.me/584122791704" target="_blank">+58 4122791704</a>
+                </div>
+            </div>
+            <div class="social-links">
+                <a href="#"><img src="Image/Instagram.png" alt="Instagram"></a>
+                <a href="https://x.com/AuroraStudio_AF" target="_blank"><img src="Image/X.png" alt="X"></a>
+                <a href="#" class="tiktok-icon"><img src="Image/Tiktok.png" alt="Tiktok"></a>
+            </div>
+        </div>
+    </footer>
+
+    
+    <div id="portfolio-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <img id="modal-img" src="" alt="Proyecto ampliado">
+            <h3 id="modal-title"></h3>
+            <p id="modal-description"></p>
+        </div>
+    </div>
+
+    <!-- Rocket Icon -->
+    <div class="rocket-icon">
+        <img src="Image/cohete.png" alt="Mini-juego">
+    </div>
+
+    <!-- Mini-Game Modal -->
+    <div id="game-modal" class="game-modal" style="display: none;">
+        <div class="game-modal-content">
+            <span class="game-close-button">&times;</span>
+            <h2>Mini-Juego Espacial</h2>
+            <canvas id="gameCanvas" width="600" height="400"></canvas>
+            <p>¡Juego en desarrollo! Esto es un placeholder.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

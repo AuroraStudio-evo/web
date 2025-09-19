@@ -1,0 +1,106 @@
+/* --- Hero Section for Team Page --- */
+.hero-equipo {
+    height: 50vh;
+    background-image: linear-gradient(rgba(13, 13, 13, 0.7), var(--primary-color)), url('Image/Visual 4.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-equipo h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: white;
+}
+
+.hero-equipo p {
+    font-size: 1.2rem;
+    color: var(--text-color-darker);
+    margin-top: 10px;
+}
+
+/* --- Team Section --- */
+.team-section {
+    padding: 80px 0;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Further reduced width */
+    gap: 25px; /* Further reduced gap */
+}
+
+.team-card {
+    background-color: var(--secondary-color);
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+    border: 1px solid var(--secondary-color);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.team-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2), 0 0 20px rgba(147, 112, 219, 0.3);
+}
+
+.team-card-img {
+    width: 100%;
+    height: 250px; /* Further reduced height */
+    overflow: hidden;
+}
+
+.team-card-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.team-card:hover .team-card-img img {
+    transform: scale(1.05);
+}
+
+.team-card-info {
+    padding: 20px 15px; /* Further reduced padding */
+}
+
+.team-card-info h3 {
+    font-size: 1.2rem; /* Further reduced font size */
+    color: white;
+    margin-bottom: 8px;
+}
+
+.team-card-info .role {
+    font-size: 0.8rem; /* Further reduced font size */
+    color: var(--accent-color);
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.team-card-info .bio {
+    font-size: 0.8rem; /* Further reduced font size */
+    color: var(--text-color-darker);
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.social-links-team {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-links-team a img {
+    width: 18px; /* Further reduced icon size */
+    height: 18px; /* Further reduced icon size */
+    opacity: 0.7;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.social-links-team a:hover img {
+    opacity: 1;
+    transform: scale(1.1);
+}
